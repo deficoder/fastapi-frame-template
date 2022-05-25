@@ -19,5 +19,8 @@ celery -A tasks.backend woker --loglevel=info
 celery -A tasks.backend flower --address=0.0.0.0 --port=8300 --loglevel=info
 ```
 
-
-![activity graph](https://activity-graph.herokuapp.com/graph?username=deficoder&custom_title=deficoder%27s%20activity%20graph&theme=github-light&hide_border=true)]
+<p align="center">
+  <img src="https://activity-graph.herokuapp.com/graph?username=deficoder&custom_title=deficoder%27s%20activity%20graph&theme=github-light&hide_border=true">
+  <br>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
+</p>
