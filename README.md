@@ -6,7 +6,7 @@
   <img alt="Celery" src="https://img.shields.io/badge/Celery-9CCF1C?logo=celery&logoColor=white">
   <img alt="Docker" src="https://img.shields.io/badge/Docker-46a2f1?logo=docker&logoColor=white">
   <br>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira%20Code&center=true&width=440&height=45&color=0F95F7FC&vCenter=true&size=22&lines=Quickly+startup+Python+FastAPI+services">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira%20Code&center=true&width=440&height=45&color=0F95F7FC&vCenter=true&size=22&lines=Quickly+Startup+Python+Service">
   <br>
   <img align="center" width="160" height="120" src="https://media.giphy.com/media/l378zf8b3gdqqVjIQ/giphy.gif">
 </p>
