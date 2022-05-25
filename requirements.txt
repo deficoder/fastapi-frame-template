@@ -1,0 +1,15 @@
+fastapi==0.52.0
+pydantic>=1.2.0,<2.0.0
+starlette==0.13.2
+uvicorn==0.15.0
+python-dotenv==0.19.2
+python-multipart
+apscheduler
+celery
+celery[redis,SQLAlchemy]
+flower
+loguru
+Pillow
+pymysql
+redis
+sqlalchemy
