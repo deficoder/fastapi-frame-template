@@ -20,8 +20,6 @@ celery -A tasks.backend flower --address=0.0.0.0 --port=8300 --loglevel=info
 ```
 
 <p align="center">
-  <img src="https://pagespeed-insights.herokuapp.com/?url=https://github.com/deficoder/fastapi-frame-template&categories=performance">
-  <br>
   <img src="https://activity-graph.herokuapp.com/graph?username=deficoder&custom_title=deficoder%27s%20activity%20graph&theme=github-light&hide_border=true">
   <br>
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=60&section=footer"/>
