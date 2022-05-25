@@ -6,7 +6,7 @@
   <img alt="Celery" src="https://img.shields.io/badge/Celery-9CCF1C?logo=celery&logoColor=white">
   <img alt="Docker" src="https://img.shields.io/badge/Docker-46a2f1?logo=docker&logoColor=white">
   <br>
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira%20Code&center=true&width=440&height=45&color=0F95F7FC&vCenter=true&size=22&lines=Quickly+build+Python+services+based+on+FastAPI">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira%20Code&center=true&width=440&height=45&color=0F95F7FC&vCenter=true&size=22&lines=Quickly+startup+Python+FastAPI+services">
   <br>
   <img align="center" width="160" height="120" src="https://media.giphy.com/media/l378zf8b3gdqqVjIQ/giphy.gif">
 </p>
@@ -18,3 +18,6 @@ celery -A tasks.backend beat --loglevel=info
 celery -A tasks.backend woker --loglevel=info
 celery -A tasks.backend flower --address=0.0.0.0 --port=8300 --loglevel=info
 ```
+
+
+![activity graph](https://activity-graph.herokuapp.com/graph?username=deficoder&custom_title=deficoder%27s%20activity%20graph&theme=github-light&hide_border=true)]
