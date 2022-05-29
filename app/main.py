@@ -19,14 +19,15 @@ def get_application(title, debug, version, api_prefix) -> FastAPI:
     application = FastAPI(title=title, debug=debug, version=version)
 
     # add_middleware
-    application.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=True, allow_methods=['*'], allow_headers=['*'])
     application.add_middleware(CertifiedMiddleware)
-
+    application.add_middleware(CORSMiddleware, allow_origins=['*'], allow_credentials=True, allow_methods=['*'], allow_headers=['*'])
+    
     # add_event_handler
     application.add_event_handler('startup', startup_event)
     application.add_event_handler('shutdown', shutdown_event)
 
     # include apis router
+    logger.log(LOGGING_LEVEL, f'API Prefix {api_prefix}')
     application.include_router(router, prefix=api_prefix)
 
     return application
