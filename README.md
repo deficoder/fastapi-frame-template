@@ -15,7 +15,7 @@
 uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 celery -A tasks.backend beat --loglevel=info
-celery -A tasks.backend woker --loglevel=info
+celery -A tasks.backend worker --loglevel=info
 celery -A tasks.backend flower --address=0.0.0.0 --port=8300 --loglevel=info
 ```
 

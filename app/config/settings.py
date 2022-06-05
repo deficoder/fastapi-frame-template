@@ -25,6 +25,8 @@ class Settings(BaseSettings):
     CELERY_BROKER:          str = ''
     CELERY_BACKEND:         str = ''
     CELERY_INTERVAL:        int = 0
+
+    PLAYLIST_PATH:          str = ''
     
 def load_config():
     envPath = os.getenv('ENV_FILEPATH', '.env')
@@ -50,6 +52,8 @@ def load_config():
     SETTINGS.CELERY_BROKER  = config('CELERY_BROKER', default=f'redis://:{SETTINGS.REDIS_PASSWORD}@{SETTINGS.REDIS_HOST}:{SETTINGS.REDIS_PORT}/{SETTINGS.REDIS_DB}')
     SETTINGS.CELERY_BACKEND = config('CELERY_BACKEND', default=f'redis://:{SETTINGS.REDIS_PASSWORD}@{SETTINGS.REDIS_HOST}:{SETTINGS.REDIS_PORT}/{SETTINGS.REDIS_DB}')
     SETTINGS.CELERY_INTERVAL= config('CELERY_INTERVAL', cast=int)
+
+    SETTINGS.PLAYLIST_PATH  = config('PLAYLIST_PATH')
     
     LOGGING_LEVEL = logging.DEBUG if SETTINGS.DEBUG else logging.INFO
     logging.getLogger().handlers = [InterceptHandler(level=LOGGING_LEVEL)]
